@@ -24,43 +24,37 @@
           <div class="card-body">
             <h5 class="card-title">Search something!</h5>
             <form>
-              <p>
-                <label class="col-sm-2 col-form-label" for="search"
-                  >Search:
-                </label>
-                <input
-                  type="text"
-                  id="search"
-                  class="search form-control"
-                  required
-                  placeholder="Only one word(Required)"
-                />
-              </p>
-              <p>
-                <label class="col-sm-2 col-form-label" for="start-date"
-                  >Start date:
-                </label>
-                <input
-                  type="date"
-                  id="start-date"
-                  class="start-date form-control"
-                  pattern="[0-9]{8}"
-                />
-              </p>
-              <p>
-                <label class="col-sm-2 col-form-label" for="end-date"
-                  >End date:
-                </label>
-                <input
-                  type="date"
-                  id="end-date"
-                  class="end-date form-control"
-                  pattern="[0-9]{8}"
-                />
-              </p>
-              <p>
+             <div class="form-group">
+              <label for="search">Search:</label>
+              <input
+                type="text"
+                id="search"
+                class="search form-control"
+                required
+                placeholder="Only one word(Required)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="start-date">Start date:</label>
+              <input
+                type="date"
+                id="start-date"
+                class="start-date form-control"
+                pattern="[0-9]{8}"
+              />
+            </div>
+            <div class="form-group">
+              <label for="end-date">End date:</label>
+              <input
+                type="date"
+                id="end-date"
+                class="end-date form-control"
+                pattern="[0-9]{8}"
+              />
+            </div>
                 <button class="submit btn btn-primary">Submit search</button>
               </p>
+            </div>
             </form>
           </div>
         </div>
@@ -73,9 +67,10 @@
           <button class="next btn btn-primary">Next 10</button>
         </nav>
         <!--Results From Request-->
-        <section></section>
+        <section class="wrapper"></section>
       </div>
     </div>
+    
     <script type="text/javascript" src="nyt.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
